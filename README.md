@@ -1,7 +1,14 @@
 CNN_MINST
 ==============================
+To make data:
+make data
+It takes the data files from data/raw, process them to prepare the dataset for the training and saves them in data/processed.
 
-A quick start to cookiecutter structure for a CNN on MINST DataSet
+To train the model:
+make train train --lr 0.0003 --ep 5
+
+To visualize the features forom the last hidden layer: 
+python src/visualization/visualize.py
 
 Project Organization
 ------------
